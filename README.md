@@ -91,3 +91,10 @@ This repository is open source under the [MIT License](LICENSE). Contributions t
 ## License
 
 This project is licensed under the [MIT License](LICENSE) - see the file for full details.
+
+<div align="center">
+
+
+**Made with ❤️ by Ashish**
+
+</div>
