@@ -1,17 +1,33 @@
 # Digital Communication Lab using MATLAB
 
-[![MATLAB](https://img.shields.io/badge/Language-MATLAB-orange.svg)](https://www.mathworks.com/products/matlab.html)
-[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
-[![Open Source Love](https://img.shields.io/badge/Open%20Source-%E2%99%A5-brightgreen.svg)](#open-source--contributions)
-[![Curriculum](https://img.shields.io/badge/Focus-Academic%20Curriculum-lightgrey.svg)](#overview)
+<div align="center">
 
-A curated collection of MATLAB implementations for fundamental Digital Communication experiments, created and maintained as part of an undergraduate engineering curriculum.
+<img src="https://upload.wikimedia.org/wikipedia/commons/2/21/Matlab_Logo.png" alt="MATLAB Logo" width="80"/>
+&nbsp;&nbsp;&nbsp;
+<img src="https://upload.wikimedia.org/wikipedia/commons/9/92/LaTeX_logo.svg" alt="LaTeX Logo" width="120"/>
+&nbsp;&nbsp;&nbsp;
+<img src="https://upload.wikimedia.org/wikipedia/commons/9/9a/Visual_Studio_Code_1.35_icon.svg" alt="VS Code Logo" width="60"/>
+
+</div>
+
+<br/>
+<div align = "center">
+
+[![MATLAB](https://img.shields.io/badge/Language-MATLAB-orange.svg)](https://www.mathworks.com/products/matlab.html) [![LaTeX](https://img.shields.io/badge/Docs-LaTeX-008080.svg)](https://www.latex-project.org/)  [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)  [![Open Source Love](https://img.shields.io/badge/Open%20Source-%E2%99%A5-brightgreen.svg)](#open-source--contributions)  [![Curriculum](https://img.shields.io/badge/Focus-Academic%20Curriculum-lightgrey.svg)](#overview)
+
+</div>
+
+A curated collection of MATLAB implementations for fundamental Digital Communication experiments, created and maintained as part of an undergraduate engineering curriculum. Also includes the complete **LaTeX source** for the practical file.
+
+> [!IMPORTANT]
+> **📢 Archive Notice** — This repository is no longer actively maintained as of **November 22, 2026**. The associated course has been completed. The code and documentation will remain available as-is for reference. Feel free to fork and build upon it!
 
 ---
 
 ## Overview
 
 - **Academic Focus**: Practical MATLAB simulations accompanying digital communication theory.
+- **LaTeX Practical File**: Full LaTeX source for the lab practical file — edit, customize, and compile with any LaTeX editor.
 - **Open Source**: Freely available for students, educators, and enthusiasts to learn, reference, and expand upon.
 - **Visual & Analytical**: Includes signal waveforms, spectral estimations, error metrics, and modulation/demodulation models.
 
@@ -49,10 +65,43 @@ Digital_Communication-using-MATLAB-/
 |   +-- Matched_filter_design.m       # Matched filter & correlator receiver
 |   +-- DSSS_Spread_Spectrum.m        # DSSS spread spectrum technique
 |
++-- Practical_File/
+|   +-- Digital_Comm_file.zip         # LaTeX source for the complete practical file
+|
 +-- .gitignore                        # Ignored temporary MATLAB/editor files
 +-- LICENSE                           # MIT Open Source License
 +-- README.md                         # Project documentation
 ```
+
+---
+
+## Practical File (LaTeX)
+
+The [`Practical_File/`](Practical_File/) folder contains **`Digital_Comm_file.zip`** — the complete LaTeX source code for the Digital Communication practical/lab file.
+
+### What's Inside the Zip
+
+- **`Digital_Comm.tex`** — Main document (root file)
+- **`cover.tex`** — Cover page
+- **`index.tex`** — Table of contents / index
+- **`exp01.tex` – `exp09.tex`** — Individual experiment write-ups
+- **`MATLAB.tex`** — MATLAB code appendix
+- **`exp_photos/` & `exp9_photos/`** — Output plots and result images
+- **`Digital_Comm.pdf`** — Pre-compiled PDF of the practical file
+
+### How to Edit
+
+You can edit the LaTeX source using **any LaTeX editor** — online or offline:
+
+| Editor | Type | Link |
+|---|---|---|
+| **Overleaf** | Online | [overleaf.com](https://www.overleaf.com/) |
+| **Papeeria** | Online | [papeeria.com](https://papeeria.com/) |
+| **TeXstudio** | Offline | [texstudio.org](https://www.texstudio.org/) |
+| **TeXmaker** | Offline | [xm1math.net/texmaker](https://www.xm1math.net/texmaker/) |
+| **VS Code + LaTeX Workshop** | Offline | [marketplace.visualstudio.com](https://marketplace.visualstudio.com/items?itemName=James-Yu.latex-workshop) |
+
+> **Steps**: Extract the zip → Open `Digital_Comm.tex` in your preferred editor → Edit and compile to PDF.
 
 ---
 
@@ -62,6 +111,9 @@ Digital_Communication-using-MATLAB-/
 
 - **MATLAB** (R2020a or newer recommended)
 - **Signal Processing Toolbox** (required for `pwelch` in line coding analysis)
+
+> [!TIP]
+> **Don't have MATLAB installed?** You can use [**MATLAB Online**](https://matlab.mathworks.com/) — a browser-based version of MATLAB that requires a MathWorks account (free for students with a university email). Just upload the `.m` files and run them directly in your browser — no installation needed!
 
 ### Installation & Execution
 
@@ -73,12 +125,12 @@ Digital_Communication-using-MATLAB-/
    ```bash
    cd Digital_Communication-using-MATLAB-
    ```
-3. **Run experiments in MATLAB**:
-   - Open MATLAB and set `MATLAB_Codes/` as your working directory.
-   - Run any desired script via the Command Window or Editor:
+3. **Run experiments in MATLAB** (Desktop or Online):
+   - **Desktop**: Open MATLAB and set `MATLAB_Codes/` as your working directory. Run any script:
      ```matlab
      run('ASK_PSK_FSK.m')
      ```
+   - **MATLAB Online**: Go to [matlab.mathworks.com](https://matlab.mathworks.com/), upload the scripts from `MATLAB_Codes/`, and run them in the browser.
 
 ---
 
